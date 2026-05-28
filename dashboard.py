@@ -38,7 +38,7 @@ COLOR_MAP = {
 # ── Data Loader ───────────────────────────────────────────
 @st.cache_data(ttl=0)
 def load_data():
-    csv_path = r"G:\내 드라이브\1100_앱개발\한국평가원\4주기 2025년도 대학현황지표.csv"
+    csv_path = "4주기 2025년도 대학현황지표.csv"
     df = pd.read_csv(csv_path, encoding='utf-8-sig')
 
     # 열 이름 정리
